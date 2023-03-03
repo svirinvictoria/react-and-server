@@ -6,8 +6,9 @@ const MyList = () => {
   const [people, setPeople] = useState([]);
 
   //filling array
-  const onClickHandler = () => {
-    setPeople(getPeople());
+  //debugger;
+  const onClickHandler = async () => {
+     setPeople(  await getPeople());
   };
 
   const showResults = () => {
